@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Stanley Wong | Employment Law Portfolio</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Hanken+Grotesk:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#000000",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "surface-bright": "#f9f9f9",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#c8c6c5",
+                        "on-tertiary-fixed-variant": "#59431a",
+                        "secondary-fixed": "#d8e3fa",
+                        "on-secondary-container": "#586377",
+                        "tertiary": "#000000",
+                        "primary-fixed": "#e5e2e1",
+                        "charcoal-dark": "#1A1A1A",
+                        "secondary-container": "#d5e0f7",
+                        "inverse-on-surface": "#f0f1f1",
+                        "slate-blue": "#4A5568",
+                        "on-primary-fixed": "#1c1b1b",
+                        "surface-container-low": "#f3f3f4",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "surface-gray": "#FAFAFA",
+                        "border-light": "#E0E0E0",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#e1c28d",
+                        "on-surface-variant": "#444748",
+                        "tertiary-container": "#271900",
+                        "secondary-fixed-dim": "#bcc7dd",
+                        "surface-dim": "#dadada",
+                        "surface": "#f9f9f9",
+                        "charcoal-muted": "#333333",
+                        "background": "#f9f9f9",
+                        "on-secondary-fixed": "#111c2c",
+                        "inverse-surface": "#2f3131",
+                        "on-primary-container": "#858383",
+                        "border-medium": "#CCCCCC",
+                        "on-tertiary-fixed": "#271900",
+                        "surface-container": "#eeeeee",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "secondary": "#545f72",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#5f5e5e",
+                        "on-primary-fixed-variant": "#474746",
+                        "tertiary-fixed": "#ffdea7",
+                        "outline": "#747878",
+                        "refined-gold": "#947A4B",
+                        "on-surface": "#1a1c1c",
+                        "surface-variant": "#e2e2e2",
+                        "outline-variant": "#c4c7c7",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "primary-container": "#1c1b1b",
+                        "surface-container-high": "#e8e8e8",
+                        "on-tertiary-container": "#9b8050"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-page-mobile": "20px",
+                        "stack-gap": "16px",
+                        "section-gap": "80px",
+                        "grid-gutter": "24px",
+                        "container-max": "1100px",
+                        "margin-page": "40px",
+                        "element-gap": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Libre Caslon Text"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "headline-display": ["Libre Caslon Text"],
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "label-mono": ["JetBrains Mono"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-caps": ["JetBrains Mono"],
+                        "body-sm": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "headline-lg": ["36px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-display": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.7", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-mono": ["13px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.7", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                        "body-sm": ["14px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .timeline-border {
+            border-left: 1px solid #1A1A1A;
+        }
+
+        .custom-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .custom-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary selection:text-on-primary">
+    <!-- Top Navigation Bar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-surface border-b border-border-light">
+        <div class="max-w-container-max mx-auto px-margin-page py-4 flex justify-between items-center">
+            <!-- Logo - left side -->
+            <a class="text-headline-md font-headline-md font-semibold text-primary" href="index.html">Stanley Wong</a>
+            
+            <!-- Navigation + Button - right side (both together) -->
+            <div class="flex items-center gap-8">
+                <nav class="flex items-center gap-8">
+                    <a class="font-label-caps text-label-caps text-on-surface-variant pb-1 hover:text-primary" href="quant-finance.html">Finance</a>
+                    <a class="font-label-caps text-label-caps text-on-surface-variant pb-1 hover:text-primary" href="engineering.html">Software</a>
+                    <a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1" href="law-cases.html">Law</a>
+                </nav>
+                <button onclick="location.href='index.html#contact'" class="bg-charcoal-dark text-on-primary font-label-caps text-label-caps px-6 py-2 scale-100 active:scale-95 transition-transform uppercase tracking-widest">Contact</button>
+            </div>
+        </div>
+    </header>
+    <main class="mt-[100px]">
+        <!-- Hero / Overview Section -->
+        <section class="max-w-[1100px] mx-auto px-margin-page py-section-gap">
+            <div class="max-w-3xl">
+                <p class="font-label-caps text-label-caps text-refined-gold mb-4 tracking-[0.2em] uppercase">Advocacy
+                    &amp; Jurisprudence</p>
+                <h1 class="font-headline-display text-headline-display mb-8">Employment Law Portfolio: Disability &amp;
+                    Equality in Recruitment.</h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-10">
+                    A clinical focus on Employment Tribunal claims involving disability discrimination, the failure to
+                    provide reasonable adjustments, and the intricacies of victimisation within high-stakes recruitment
+                    processes. I apply a rigorous, evidence-first approach to legal advocacy, merging statutory
+                    interpretation with technical precision.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <div class="flex items-center gap-2 px-4 py-2 bg-surface-gray border border-border-light">
+                        <span class="material-symbols-outlined text-primary" data-icon="gavel">gavel</span>
+                        <span class="font-label-mono text-label-mono uppercase">Tribunal Specialist</span>
+                    </div>
+                    <div class="flex items-center gap-2 px-4 py-2 bg-surface-gray border border-border-light">
+                        <span class="material-symbols-outlined text-primary" data-icon="balance">balance</span>
+                        <span class="font-label-mono text-label-mono uppercase">Equality Act 2010</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Practice Areas Bento Grid -->
+        <section class="bg-surface-gray py-section-gap border-y border-border-light">
+            <div class="max-w-[1100px] mx-auto px-margin-page">
+                <div class="mb-12">
+                    <h2 class="font-headline-lg text-headline-lg mb-2">Practice Architecture</h2>
+                    <div class="w-16 h-1 bg-primary"></div>
+                </div>
+                <div class="custom-grid">
+                    <!-- Area 1 -->
+                    <div
+                        class="col-span-1 md:col-span-8 bg-white p-8 border border-border-light group hover:border-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-6"
+                            data-icon="blind">blind</span>
+                        <h3 class="font-headline-md text-headline-md mb-4">Disability Discrimination</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Expertise in Direct and Indirect
+                            discrimination claims (Sections 13 &amp; 19 EqA 2010) and Discrimination Arising from
+                            Disability (Section 15). Focus on medical evidence interrogation and the objective
+                            justification test in complex corporate environments.</p>
+                    </div>
+                    <!-- Area 2 -->
+                    <div
+                        class="col-span-1 md:col-span-4 bg-white p-8 border border-border-light group hover:border-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-6"
+                            data-icon="settings_accessibility">settings_accessibility</span>
+                        <h3 class="font-headline-md text-headline-md mb-4">Reasonable Adjustments</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Advocating for the duty under
+                            Section 20 EqA 2010. Specializing in identifying PCPs and asserting adjustments for
+                            neurodivergent candidates during rigorous technical assessments.</p>
+                    </div>
+                    <!-- Area 3 -->
+                    <div
+                        class="col-span-1 md:col-span-4 bg-white p-8 border border-border-light group hover:border-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-6"
+                            data-icon="privacy_tip">privacy_tip</span>
+                        <h3 class="font-headline-md text-headline-md mb-4">Victimisation</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Protecting the integrity of the
+                            legal process by handling claims where individuals have suffered detriment following
+                            protected acts in the workplace.</p>
+                    </div>
+                    <!-- Area 4 -->
+                    <div
+                        class="col-span-1 md:col-span-8 bg-white p-8 border border-border-light group hover:border-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-6"
+                            data-icon="person_search">person_search</span>
+                        <h3 class="font-headline-md text-headline-md mb-4">Recruitment Law Compliance</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Advising on the legality of
+                            psychometric testing, algorithmic bias in automated screening, and the implementation of
+                            inclusive hiring frameworks for Tier-1 financial and engineering firms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Representative Experience / Timeline -->
+        <section class="max-w-[1100px] mx-auto px-margin-page py-section-gap">
+            <div class="mb-16">
+                <h2 class="font-headline-lg text-headline-lg mb-2">Casework &amp; Experience</h2>
+                <p class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-widest">
+                    Representative Legal Advocacy</p>
+            </div>
+            <div class="space-y-12">
+                <!-- Case 1 -->
+                <div class="timeline-border pl-8 relative">
+                    <div class="absolute -left-[5px] top-0 w-[9px] h-[9px] bg-primary"></div>
+                    <div class="flex flex-col md:flex-row justify-between gap-6 mb-4">
+                        <div>
+                            <h4 class="font-headline-md text-headline-md">Disability Discrimination in Tech Recruitment
+                            </h4>
+                            <p class="font-label-mono text-label-mono text-slate-blue uppercase">Tribunal Matter •
+                                Employment Tribunal</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="bg-surface-container px-3 py-1 font-label-mono text-label-mono">FY 2023</span>
+                        </div>
+                    </div>
+                    <p class="font-body-md text-body-md text-on-surface-variant max-w-4xl mb-6">
+                        Represented a claimant with ASD in a claim for failure to make reasonable adjustments during a
+                        coding assessment. The case focused on the "Practice, Criterion, or Provision" (PCP) of a timed,
+                        live-monitored environment. Achieved a successful settlement through rigorous pre-hearing
+                        negotiation based on comparative neuropsychological data.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="bg-surface-gray border border-border-light px-3 py-1 font-label-caps text-[10px] uppercase">Reasonable
+                            Adjustments</span>
+                        <span
+                            class="bg-surface-gray border border-border-light px-3 py-1 font-label-caps text-[10px] uppercase">Neurodiversity</span>
+                        <span
+                            class="bg-surface-gray border border-border-light px-3 py-1 font-label-caps text-[10px] uppercase">EqA
+                            2010 s.20</span>
+                    </div>
+                </div>
+                <!-- Case 2 -->
+                <div class="timeline-border pl-8 relative">
+                    <div class="absolute -left-[5px] top-0 w-[9px] h-[9px] bg-primary"></div>
+                    <div class="flex flex-col md:flex-row justify-between gap-6 mb-4">
+                        <div>
+                            <h4 class="font-headline-md text-headline-md">Victimisation &amp; Post-Termination Detriment
+                            </h4>
+                            <p class="font-label-mono text-label-mono text-slate-blue uppercase">Litigation Advisory •
+                                Financial Sector</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="bg-surface-container px-3 py-1 font-label-mono text-label-mono">FY 2022</span>
+                        </div>
+                    </div>
+                    <p class="font-body-md text-body-md text-on-surface-variant max-w-4xl mb-6">
+                        Led a discovery phase into allegations of victimisation following a grievance raised by a senior
+                        quant analyst. Utilized technical audit trails to demonstrate a causal link between the
+                        protected act and the subsequent withdrawal of a conditional offer in a related recruitment
+                        cycle.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="bg-surface-gray border border-border-light px-3 py-1 font-label-caps text-[10px] uppercase">Victimisation</span>
+                        <span
+                            class="bg-surface-gray border border-border-light px-3 py-1 font-label-caps text-[10px] uppercase">Data
+                            Forensics</span>
+                        <span
+                            class="bg-surface-gray border border-border-light px-3 py-1 font-label-caps text-[10px] uppercase">Equity
+                            Settlement</span>
+                    </div>
+                </div>
+                <!-- Case 3 -->
+                <div class="timeline-border pl-8 relative">
+                    <div class="absolute -left-[5px] top-0 w-[9px] h-[9px] bg-primary"></div>
+                    <div class="flex flex-col md:flex-row justify-between gap-6 mb-4">
+                        <div>
+                            <h4 class="font-headline-md text-headline-md">Systemic Audit of Hiring Algorithms</h4>
+                            <p class="font-label-mono text-label-mono text-slate-blue uppercase">Compliance Review •
+                                Global Engineering Firm</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="bg-surface-container px-3 py-1 font-label-mono text-label-mono">FY 2022</span>
+                        </div>
+                    </div>
+                    <p class="font-body-md text-body-md text-on-surface-variant max-w-4xl mb-6">
+                        Conducted a legal-technical audit of a proprietary CV-screening AI to identify potential
+                        indirect discrimination risks under s.19 of the Equality Act. Provided comprehensive
+                        recommendations for bias-mitigation and human-in-the-loop validation for candidate pools
+                        exceeding 10,000 applicants.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="bg-surface-gray border border-border-light px-3 py-1 font-label-caps text-[10px] uppercase">Algorithm
+                            Ethics</span>
+                        <span
+                            class="bg-surface-gray border border-border-light px-3 py-1 font-label-caps text-[10px] uppercase">Indirect
+                            Discrimination</span>
+                        <span
+                            class="bg-surface-gray border border-border-light px-3 py-1 font-label-caps text-[10px] uppercase">Risk
+                            Mitigation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Legal Consultation CTA -->
+        <section class="max-w-[1100px] mx-auto px-margin-page py-section-gap">
+            <div class="bg-charcoal-dark text-on-primary p-12 relative overflow-hidden">
+                <!-- Abstract Pattern Background -->
+                <div class="absolute inset-0 opacity-10 pointer-events-none">
+                    <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern height="40" id="grid" patternunits="userSpaceOnUse" width="40">
+                                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5"></path>
+                            </pattern>
+                        </defs>
+                        <rect fill="url(#grid)" height="100%" width="100%"></rect>
+                    </svg>
+                </div>
+                <div class="relative z-10 custom-grid items-center">
+                    <div class="col-span-1 md:col-span-7">
+                        <h2 class="font-headline-lg text-headline-lg mb-6">Secure Counsel &amp; Representation</h2>
+                        <p class="font-body-lg text-body-lg mb-8 opacity-90">
+                            Professional legal advocacy requires meticulous preparation and a profound understanding of
+                            statutory nuances. If you are navigating an Employment Tribunal matter or require compliance
+                            expertise in recruitment, engage for a confidential consultation.
+                        </p>
+                        <form netlify data-netlify-honeypot="bot-field" class="space-y-4 max-w-md">
+                            <input type="hidden" name="form-name" value="Legal Consultation" />
+                            <div style="display: none;">
+                                <input name="bot-field" />
+                            </div>
+                            <input name="full_name" class="w-full bg-white text-primary border-none p-4 font-label-caps text-label-caps outline-none focus:ring-2 focus:ring-refined-gold transition-all" placeholder="FULL NAME" type="text" />
+                            <input name="email" class="w-full bg-white text-primary border-none p-4 font-label-caps text-label-caps outline-none focus:ring-2 focus:ring-refined-gold transition-all" placeholder="EMAIL ADDRESS" type="email" />
+                            <textarea name="case_summary" class="w-full bg-white text-primary border-none p-4 font-label-caps text-label-caps outline-none focus:ring-2 focus:ring-refined-gold transition-all" placeholder="BRIEF CASE SUMMARY" rows="3"></textarea>
+                            <button class="w-full bg-white text-primary font-label-caps text-label-caps py-4 hover:bg-refined-gold hover:text-white transition-colors duration-300 uppercase tracking-widest font-bold" type="submit">Request Consultation</button>
+                        </form>
+                    </div>
+                    <div class="col-span-1 md:col-span-5 flex flex-col items-center md:items-end gap-8">
+                        <div class="text-center md:text-right border-l-4 border-refined-gold pl-6 py-2">
+                            <div class="font-label-mono text-label-mono mb-2 uppercase opacity-60">Status</div>
+                            <div class="font-headline-md text-headline-md italic tracking-wide">"Lex et Scientia"</div>
+                        </div>
+                        <img alt="Legal Advocacy" class="w-full h-64 object-cover border border-white/20 grayscale"
+                            data-alt="A professional legal study background featuring an out-of-focus collection of classic law books in a dark mahogany bookcase. The lighting is focused and warm, emphasizing a single gavel and a fountain pen on a polished dark wood desk. The atmosphere is quiet, intellectual, and authoritative, echoing a prestigious and rigorous legal practice. High contrast blacks and deep browns dominate the palette."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfM6VC6kFLWMbk0xVY1na3cyOo_s-NNuRAkNKpwDaA2YnsSkfr91uDL5WgvwrUlzE0cd5Srv3oJZO5N-m5PMZ8lVNdKjgPLMo65kHV6xPBT8temutCy9OD33Vf4VHfDw-CrCfYTxvZv7YZ4sxFOCckckc5289PIODv4oqnkHjXbCEzazz7FwiV1W9z3xqHGdTASqul6-63CvyfcvHfwwleIsR7rKRIgF0xRdevxlTlaR6Frw1X8z_al5fwPqmrmo-_qxp0Fm-W4Q" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface border-t border-border-light w-full py-element-gap">
+        <div class="max-w-container-max mx-auto px-margin-page flex flex-col md:flex-row justify-between items-center gap-stack-gap">
+            <p class="font-body-sm text-body-sm text-on-secondary-container">© 2026 Stanley Wong. All Rights Reserved.</p>
+            <div class="flex gap-8">
+                <a class="font-label-caps text-label-caps text-on-secondary-container hover:underline transition-all flex items-center gap-1" 
+                href="https://www.linkedin.com/in/stanleywong15/" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                    <span class="material-symbols-outlined text-sm">work</span>
+                    LinkedIn
+                </a>
+                <a class="font-label-caps text-label-caps text-on-secondary-container hover:underline transition-all flex items-center gap-1" 
+                href="https://github.com/stanley-wong-coder/" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                    <span class="material-symbols-outlined text-sm">code</span>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Interactive Layer: Hover and Scroll effects -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Subtle scroll reveal for timeline items
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-8');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.timeline-border').forEach(item => {
+                item.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
+                observer.observe(item);
+            });
+
+            // Smooth scaling for buttons
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.addEventListener('mouseenter', () => {
+                    btn.classList.add('opacity-90');
+                });
+                btn.addEventListener('mouseleave', () => {
+                    btn.classList.remove('opacity-90');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

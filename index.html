@@ -1,271 +1,334 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="light" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stanley Wong | Quant · Engineer · Lawyer</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Stanley Wong | Quantitative Finance, Software &amp; Law</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;600;700&amp;family=Hanken+Grotesk:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+        rel="stylesheet">
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed": "#111c2c",
+                        "surface-container-low": "#f3f3f4",
+                        "secondary-fixed-dim": "#bcc7dd",
+                        "tertiary": "#000000",
+                        "error": "#ba1a1a",
+                        "on-background": "#1a1c1c",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c4c7c7",
+                        "on-primary-container": "#858383",
+                        "on-secondary-container": "#586377",
+                        "inverse-surface": "#2f3131",
+                        "surface": "#f9f9f9",
+                        "outline": "#747878",
+                        "charcoal-muted": "#333333",
+                        "on-tertiary-container": "#9b8050",
+                        "border-medium": "#CCCCCC",
+                        "tertiary-container": "#271900",
+                        "surface-container-highest": "#e2e2e2",
+                        "tertiary-fixed-dim": "#e1c28d",
+                        "inverse-primary": "#c8c6c5",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-gray": "#FAFAFA",
+                        "refined-gold": "#947A4B",
+                        "on-tertiary-fixed": "#271900",
+                        "secondary": "#545f72",
+                        "surface-variant": "#e2e2e2",
+                        "on-surface-variant": "#444748",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-tertiary-fixed-variant": "#59431a",
+                        "inverse-on-surface": "#f0f1f1",
+                        "secondary-fixed": "#d8e3fa",
+                        "border-light": "#E0E0E0",
+                        "background": "#f9f9f9",
+                        "on-primary-fixed": "#1c1b1b",
+                        "charcoal-dark": "#1A1A1A",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-bright": "#f9f9f9",
+                        "error-container": "#ffdad6",
+                        "slate-blue": "#4A5568",
+                        "on-surface": "#1a1c1c",
+                        "surface-tint": "#5f5e5e",
+                        "surface-container": "#eeeeee",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#1c1b1b",
+                        "primary-fixed": "#e5e2e1",
+                        "surface-dim": "#dadada",
+                        "secondary-container": "#d5e0f7",
+                        "primary": "#000000",
+                        "on-primary-fixed-variant": "#474746",
+                        "tertiary-fixed": "#ffdea7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-gap": "16px",
+                        "section-gap": "80px",
+                        "element-gap": "32px",
+                        "container-max": "1100px",
+                        "grid-gutter": "24px",
+                        "margin-page-mobile": "20px",
+                        "margin-page": "40px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Hanken Grotesk"],
+                        "label-mono": ["JetBrains Mono"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "label-caps": ["JetBrains Mono"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "body-sm": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "headline-display": ["Libre Caslon Text"],
+                        "body-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.7", "fontWeight": "400" }],
+                        "label-mono": ["13px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                        "headline-lg": ["36px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-display": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.7", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
         }
 
         body {
-            font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
-            background: #ffffff;
-            color: #1a1a1a;
-            line-height: 1.7;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 24px;
+            background-color: #f9f9f9;
+            color: #1a1c1c;
+            -webkit-font-smoothing: antialiased;
         }
 
-        h1 {
-            font-size: 42px;
-            font-weight: 600;
-            text-align: center;
-            margin-bottom: 8px;
-        }
-
-        .tagline {
-            text-align: center;
-            font-size: 18px;
-            color: #555555;
-            margin-bottom: 48px;
-            border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 24px;
-        }
-
-        /* Cards section */
-        .cards {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 32px;
-            justify-content: center;
-            margin-bottom: 60px;
-        }
-
-        .card {
-            flex: 1;
-            min-width: 250px;
-            max-width: 320px;
-            border: 1px solid #cccccc;
-            padding: 32px 24px;
-            background: #fafafa;
-            text-decoration: none;
-            color: inherit;
-            transition: border-color 0.2s ease;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .card:hover {
-            border-color: #555555;
-        }
-
-        .card h2 {
-            font-size: 28px;
-            font-weight: 600;
-            margin-bottom: 16px;
-        }
-
-        .card p {
-            font-size: 14px;
-            color: #555555;
-            margin-bottom: 24px;
-            flex: 1;
-        }
-
-        .card .btn {
-            display: inline-block;
-            padding: 10px 22px;
-            border: 1px solid #333333;
-            background: #ffffff;
-            color: #1a1a1a;
-            font-size: 14px;
-            font-weight: 500;
-            text-align: center;
-            align-self: flex-start;
-            transition: background 0.2s ease, color 0.2s ease;
-        }
-
-        .card .btn:hover {
-            background: #1a1a1a;
-            color: #ffffff;
-        }
-
-        /* Contact form section */
-        .contact-section {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 32px;
-            background: #f5f5f5;
-            border: 1px solid #e0e0e0;
-        }
-
-        .contact-section h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 6px;
-            color: #333333;
-        }
-
-        input, textarea, select {
-            width: 100%;
-            padding: 10px 12px;
-            border: 1px solid #cccccc;
-            font-family: inherit;
-            font-size: 14px;
-            background: #ffffff;
-        }
-
-        textarea {
-            resize: vertical;
-        }
-
-        button {
-            background: #1a1a1a;
-            color: #ffffff;
-            border: none;
-            padding: 12px 24px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s ease;
-        }
-
-        button:hover {
-            background: #333333;
-        }
-
-        footer {
-            margin-top: 48px;
-            padding-top: 24px;
-            border-top: 1px solid #cccccc;
-            font-size: 13px;
-            color: #777777;
-            text-align: center;
-        }
-
-        @media (max-width: 800px) {
-            .cards {
-                flex-direction: column;
-                align-items: center;
-            }
-            .card {
-                max-width: 400px;
-                width: 100%;
-            }
+        .experience-timeline {
+            border-left: 1px solid #E0E0E0;
         }
     </style>
 </head>
-<body>
 
-    <h1>Stanley Wong</h1>
-    <div class="tagline">Quantitative Finance · Software Engineering · Employment Law</div>
-
-    <!-- Three career paths -->
-    <div class="cards">
-        <a href="quant/quant-cv.html" class="card">
-            <h2>📊 Quant Finance</h2>
-            <p>Model Validation Specialist with experience in market risk, stress testing, and valuation control. MSc Econometrics.</p>
-            <span class="btn">View CV →</span>
-        </a>
-
-        <a href="engineer/engineering.html" class="card">
-            <h2>💻 Engineering</h2>
-            <p>Full-stack developer. Built booking systems, e-commerce backends, and static websites. Node.js, React, MongoDB, PostgreSQL.</p>
-            <span class="btn">View Projects →</span>
-        </a>
-
-        <a href="lawyer/law-cases.html" class="card">
-            <h2>⚖️ Legal</h2>
-            <p>Employment Tribunal claims focused on disability discrimination, reasonable adjustments, and victimisation in recruitment.</p>
-            <span class="btn">View Case Portfolio →</span>
-        </a>
+<body class="font-body-md text-body-md selection:bg-primary selection:text-on-primary">
+    <!-- TopAppBar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-surface border-b border-border-light">
+        <div class="max-w-container-max mx-auto px-margin-page py-4 flex justify-between items-center">
+            <!-- Logo - left side -->
+            <a class="text-headline-md font-headline-md font-semibold text-primary" href="index.html">Stanley Wong</a>
+            
+            <!-- Navigation + Button - right side (both together) -->
+            <div class="flex items-center gap-8">
+                <nav class="flex items-center gap-8">
+                    <a class="font-label-caps text-label-caps text-on-surface-variant pb-1 hover:text-primary" href="quant-finance.html">Finance</a>
+                    <a class="font-label-caps text-label-caps text-on-surface-variant pb-1 hover:text-primary" href="engineering.html">Software</a>
+                    <a class="font-label-caps text-label-caps text-on-surface-variant pb-1 hover:text-primary" href="law-cases.html">Law</a>
+                </nav>
+                <button onclick="location.href='index.html#contact'" class="bg-charcoal-dark text-on-primary font-label-caps text-label-caps px-6 py-2 scale-100 
+                active:scale-95 transition-transform uppercase tracking-widest">Contact</button>
+            </div>
+        </div>
+    </header>
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="max-w-container-max mx-auto px-margin-page py-section-gap">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-element-gap items-center">
+                <div class="md:col-span-7 flex flex-col items-start gap-stack-gap">
+                    <span class="font-label-caps text-label-caps text-on-primary-container">Professional
+                        Portfolio</span>
+                    <h1 class="font-headline-display text-headline-display text-primary">Stanley Wong</h1>
+                    <p class="font-headline-md text-headline-md text-on-surface-variant italic">Quantitative Finance ·
+                        Software Engineering · Employment Law</p>
+                    <div class="w-24 h-px bg-primary mt-4"></div>
+                </div>
+                <div class="md:col-span-5 flex justify-center md:justify-end">
+                    <div
+                        class="relative w-full max-w-[400px] aspect-square overflow-hidden rounded-lg border border-border-light shadow-xl">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy12ruZXidoz-cU35Y4dsLddtyE4r3j9SjoqgPvtpEWLyxFRzs0LlasD9pY6sKnnxxMnIp1KNWPu1vbSnO-p8bHcGeIfkQ3eq5BIVS6LNiVM0-fvINRxtx114PIIOUJJ38C7kV6gYzE51PNwYuk_byXACUG1K4BCHn5O9oVauyGpH_tRM-aCG8-b1K78YK4-WuwHAN5Znrj_ffZNy2Lru2QsnZUWnyBouyrIz0UY9wjtIFmSvbI0n-8FCHeDTm3nfonoMFsBdhvQ"
+                            alt="Stanley Wong Professional Portrait"
+                            class="w-full h-full object-cover grayscale contrast-125">
+                        <div class="absolute inset-0 border-[12px] border-white/10 pointer-events-none"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Professional Summary -->
+        <section class="max-w-container-max mx-auto px-margin-page pb-section-gap">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-grid-gutter">
+                <div class="md:col-span-8">
+                    <p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                        A multi-disciplinary specialist bridging the gap between quantitative rigor, technical
+                        execution, and legal advocacy. Based in Rotterdam, with experience across banking, full-stack
+                        development, and disability discrimination claims.
+                    </p>
+                </div>
+            </div>
+        </section>
+    <!-- Domain Cards (Asymmetric Grid) -->
+    <section class="max-w-container-max mx-auto px-margin-page pb-section-gap">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-grid-gutter">
+            <!-- Card 1: Finance -->
+            <div onclick="location.href='quant-finance.html'" class="bg-surface-gray border border-border-light p-element-gap flex flex-col justify-between group hover:border-primary transition-colors duration-300 cursor-pointer">
+                <div>
+                    <div class="mb-stack-gap flex justify-between items-start">
+                        <span class="material-symbols-outlined text-4xl text-primary">analytics</span>
+                        <span class="font-label-mono text-label-mono text-charcoal-muted bg-surface-container px-2 py-1">MSc Econometrics</span>
+                    </div>
+                    <h2 class="font-headline-md text-headline-md mb-stack-gap">Quantitative Finance</h2>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant mb-element-gap">
+                        Model Validation Specialist with experience in market risk, stress testing, and valuation
+                        control. Focused on high-fidelity risk architecture and compliance.
+                    </p>
+                </div>
+                <button class="w-full border border-charcoal-dark py-3 font-label-caps text-label-caps hover:bg-charcoal-dark hover:text-white transition-all">View Finance CV</button>
+            </div>
+            
+        <!-- Card 2: Software -->
+        <div class="bg-surface-gray border border-border-light p-element-gap flex flex-col justify-between group hover:border-primary transition-colors duration-300">
+            <div>
+                <div class="mb-stack-gap flex justify-between items-start">
+                    <span class="material-symbols-outlined text-4xl text-primary">terminal</span>
+                    <div class="flex flex-wrap gap-2 justify-end">
+                        <span class="font-label-mono text-label-mono text-charcoal-muted bg-surface-container px-2 py-1">Node.js</span>
+                        <span class="font-label-mono text-label-mono text-charcoal-muted bg-surface-container px-2 py-1">React</span>
+                    </div>
+                </div>
+                <h2 class="font-headline-md text-headline-md mb-stack-gap">Software Engineering</h2>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mb-element-gap">
+                    Full-stack developer focused on clean code and practical solutions. Architecture that scales, powered by Node.js, React, and PostgreSQL. 
+                    <a href="https://github.com/stanley-wong-coder/" target="_blank" rel="noopener noreferrer" 
+                    class="inline-flex items-center gap-1 px-2 py-0.5 bg-refined-gold/10 text-refined-gold border border-refined-gold/20 rounded-full text-xs font-medium hover:bg-refined-gold hover:text-white transition-all">
+                        <span class="material-symbols-outlined text-sm">code</span>
+                        GitHub
+                    </a>
+                </p>
+            </div>
+            <button onclick="location.href='engineering.html'" class="w-full border border-charcoal-dark py-3 font-label-caps text-label-caps hover:bg-charcoal-dark hover:text-white transition-all">View Projects</button>
+        </div>
+            
+        <!-- Card 3: Law -->
+        <div onclick="location.href='law-cases.html'" class="bg-surface-gray border border-border-light p-element-gap flex flex-col justify-between group hover:border-primary transition-colors duration-300 cursor-pointer">
+            <div>
+                <div class="mb-stack-gap flex justify-between items-start">
+                    <span class="material-symbols-outlined text-4xl text-primary">gavel</span>
+                    <span class="font-label-mono text-label-mono text-charcoal-muted bg-surface-container px-2 py-1">Claims Advocate</span>
+                </div>
+                <h2 class="font-headline-md text-headline-md mb-stack-gap">Employment Law</h2>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mb-element-gap">
+                    Legal portfolio focused on Employment Tribunal claims, disability discrimination, and
+                    reasonable adjustments. Strategic advocacy for complex workplace cases.
+                </p>
+            </div>
+            <button class="w-full border border-charcoal-dark py-3 font-label-caps text-label-caps hover:bg-charcoal-dark hover:text-white transition-all">View Case Portfolio</button>
+        </div>
+        </div>
+    </section>
+        <!-- Contact Section -->
+        <section class="max-w-container-max mx-auto px-margin-page py-section-gap" id="contact">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-section-gap">
+                <div>
+                    <h2 class="font-headline-lg text-headline-lg mb-stack-gap">Get in touch</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-element-gap max-w-md">
+                        Whether it's a complex quantitative model, a robust engineering project, or legal consultation,
+                        I'm open to discussing new challenges.
+                    </p>
+                    <div class="flex flex-col gap-4">
+                        <a class="font-label-caps text-label-caps text-primary flex items-center gap-2 hover:underline"
+                            href="mailto:contact@stanleywong.com">
+                            <span class="material-symbols-outlined">mail</span> wongstanley15@gmail.com
+                        </a>
+                        <div class="font-label-caps text-label-caps text-on-surface-variant flex items-center gap-2">
+                            <span class="material-symbols-outlined">location_on</span> Rotterdam, Netherlands
+                        </div>
+                    </div>
+                </div>
+                <form class="space-y-6">
+                    <div>
+                        <label class="block font-label-caps text-label-caps mb-2 text-charcoal-muted">Full Name</label>
+                        <input
+                            class="w-full border border-border-medium bg-white p-3 focus:border-primary outline-none transition-colors"
+                            placeholder="John Doe" type="text">
+                    </div>
+                    <div>
+                        <label class="block font-label-caps text-label-caps mb-2 text-charcoal-muted">Email
+                            Address</label>
+                        <input
+                            class="w-full border border-border-medium bg-white p-3 focus:border-primary outline-none transition-colors"
+                            placeholder="john@example.com" type="email">
+                    </div>
+                    <div>
+                        <label class="block font-label-caps text-label-caps mb-2 text-charcoal-muted">Inquiry
+                            Details</label>
+                        <textarea
+                            class="w-full border border-border-medium bg-white p-3 focus:border-primary outline-none transition-colors"
+                            placeholder="How can I help you?" rows="4"></textarea>
+                    </div>
+                    <button
+                        class="bg-charcoal-dark text-white px-8 py-4 font-label-caps text-label-caps hover:bg-black transition-all w-full md:w-auto"
+                        type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface border-t border-border-light w-full py-element-gap">
+    <div class="max-w-container-max mx-auto px-margin-page flex flex-col md:flex-row justify-between items-center gap-stack-gap">
+        <p class="font-body-sm text-body-sm text-on-secondary-container">© 2026 Stanley Wong. All Rights Reserved.</p>
+        <div class="flex gap-8">
+            <a class="font-label-caps text-label-caps text-on-secondary-container hover:underline transition-all" 
+               href="https://www.linkedin.com/in/stanleywong15/" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                LinkedIn
+            </a>
+            <a class="font-label-caps text-label-caps text-on-secondary-container hover:underline transition-all" 
+               href="https://github.com/stanley-wong-coder/" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                GitHub
+            </a>
+        </div>
     </div>
-
-    <!-- Contact form -->
-    <div class="contact-section">
-        <h2>Get in touch</h2>
-        <form id="contactForm">
-            <div class="form-group">
-                <label for="name">Name *</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email *</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="subject">Subject</label>
-                <select id="subject" name="subject">
-                    <option value="Quant Finance">Quant Finance</option>
-                    <option value="Engineering">Engineering</option>
-                    <option value="Legal">Legal</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="message">Message *</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit">Send message</button>
-        </form>
-        <p style="font-size: 12px; color: #777777; margin-top: 16px; text-align: center;">📋 Your message will be sent to <a href="mailto:wongstanley15@gmail.com">wongstanley15@gmail.com</a></p>
-    </div>
-
-    <footer>
-        <p>© 2026 Stanley Wong</p>
     </footer>
-
     <script>
-        const form = document.getElementById('contactForm');
-        if (form) {
-            form.addEventListener('submit', async (e) => {
-                e.preventDefault();
-                const name = document.getElementById('name').value.trim();
-                const email = document.getElementById('email').value.trim();
-                const subject = document.getElementById('subject').value;
-                const message = document.getElementById('message').value.trim();
-
-                if (!name || !email || !message) {
-                    alert('Please fill in all required fields.');
-                    return;
-                }
-
-                // Send to Formspree (free email service)
-                const formspreeUrl = 'https://formspree.io/f/xzdwgdrr';
-                
-                try {
-                    const response = await fetch(formspreeUrl, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ name, email, subject, message })
-                    });
-                    if (response.ok) {
-                        alert('✅ Message sent — I\'ll get back to you shortly.');
-                        form.reset();
-                    } else {
-                        alert('❌ Something went wrong. Please try again or email me directly.');
-                    }
-                } catch (error) {
-                    alert('❌ Error sending message. Please email me directly at wongstanley15@gmail.com');
-                }
-            });
-        }
+        // Simple micro-interaction for header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-sm');
+            } else {
+                header.classList.remove('shadow-sm');
+            }
+        });
     </script>
 </body>
+
 </html>

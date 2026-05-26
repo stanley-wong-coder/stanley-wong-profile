@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Stanley Wong | Finance CV - Quantitative Risk &amp; Model Validation</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;600;700&amp;family=Hanken+Grotesk:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#000000",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "surface-bright": "#f9f9f9",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#c8c6c5",
+                        "on-tertiary-fixed-variant": "#59431a",
+                        "secondary-fixed": "#d8e3fa",
+                        "on-secondary-container": "#586377",
+                        "tertiary": "#000000",
+                        "primary-fixed": "#e5e2e1",
+                        "charcoal-dark": "#1A1A1A",
+                        "secondary-container": "#d5e0f7",
+                        "inverse-on-surface": "#f0f1f1",
+                        "slate-blue": "#4A5568",
+                        "on-primary-fixed": "#1c1b1b",
+                        "surface-container-low": "#f3f3f4",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "surface-gray": "#FAFAFA",
+                        "border-light": "#E0E0E0",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#e1c28d",
+                        "on-surface-variant": "#444748",
+                        "tertiary-container": "#271900",
+                        "secondary-fixed-dim": "#bcc7dd",
+                        "surface-dim": "#dadada",
+                        "surface": "#f9f9f9",
+                        "charcoal-muted": "#333333",
+                        "background": "#f9f9f9",
+                        "on-secondary-fixed": "#111c2c",
+                        "inverse-surface": "#2f3131",
+                        "on-primary-container": "#858383",
+                        "border-medium": "#CCCCCC",
+                        "on-tertiary-fixed": "#271900",
+                        "surface-container": "#eeeeee",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "secondary": "#545f72",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#5f5e5e",
+                        "on-primary-fixed-variant": "#474746",
+                        "tertiary-fixed": "#ffdea7",
+                        "outline": "#747878",
+                        "refined-gold": "#947A4B",
+                        "on-surface": "#1a1c1c",
+                        "surface-variant": "#e2e2e2",
+                        "outline-variant": "#c4c7c7",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "primary-container": "#1c1b1b",
+                        "surface-container-high": "#e8e8e8",
+                        "on-tertiary-container": "#9b8050"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-page-mobile": "20px",
+                        "stack-gap": "16px",
+                        "section-gap": "80px",
+                        "grid-gutter": "24px",
+                        "container-max": "1100px",
+                        "margin-page": "40px",
+                        "element-gap": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Libre Caslon Text"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "headline-display": ["Libre Caslon Text"],
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "label-mono": ["JetBrains Mono"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-caps": ["JetBrains Mono"],
+                        "body-sm": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "headline-lg": ["36px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-display": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.7", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-mono": ["13px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.7", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                        "body-sm": ["14px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .timeline-border {
+            border-left: 1px solid #E0E0E0;
+        }
+
+        .bg-surface-gray {
+            background-color: #FAFAFA;
+        }
+
+        .text-charcoal-dark {
+            color: #1A1A1A;
+        }
+
+        .text-charcoal-muted {
+            color: #333333;
+        }
+
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface antialiased">
+    <header class="fixed top-0 left-0 w-full z-50 bg-surface border-b border-border-light">
+        <div class="max-w-container-max mx-auto px-margin-page py-4 flex justify-between items-center">
+            <!-- Logo - left side -->
+            <a class="text-headline-md font-headline-md font-semibold text-primary" href="index.html">Stanley Wong</a>
+            
+            <!-- Navigation + Button - right side (both together) -->
+            <div class="flex items-center gap-8">
+                <nav class="flex items-center gap-8">
+                    <a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1" href="quant-finance.html">Finance</a>
+                    <a class="font-label-caps text-label-caps text-on-surface-variant pb-1 hover:text-primary" href="engineering.html">Software</a>
+                    <a class="font-label-caps text-label-caps text-on-surface-variant pb-1 hover:text-primary" href="law-cases.html">Law</a>
+                </nav>
+                <button onclick="location.href='index.html#contact'" class="bg-charcoal-dark text-on-primary font-label-caps text-label-caps px-6 py-2 scale-100 active:scale-95 transition-transform uppercase tracking-widest">Contact</button>
+            </div>
+        </div>
+    </header>
+    <main class="pt-32 pb-section-gap max-w-[1100px] mx-auto px-margin-page">
+        <!-- Header Section -->
+        <section class="mb-section-gap">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+                <div class="flex-1">
+                    <h1 class="font-headline-display text-headline-display mb-4">Quantitative Risk Management</h1>
+                    <p class="font-body-lg text-body-lg text-on-secondary-container max-w-2xl">
+                        Model Validation • Market Risk • Risk Analytics. Specialized in developing and challenging
+                        quantitative risk frameworks for Tier 1 financial institutions.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-2 font-label-mono text-label-mono text-charcoal-muted pt-4">
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[18px]">mail</span>
+                        <a class="hover:underline" href="mailto:wongstanley15@gmail.com">wongstanley15@gmail.com</a>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[18px]">location_on</span>
+                        <span>Rotterdam, Netherlands</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[18px]">link</span>
+                        <a class="hover:underline" href="https://www.linkedin.com/in/stanleywong15/">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 h-[1px] bg-border-light w-full"></div>
+        </section>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-grid-gutter">
+            <!-- Left Column: Profile & Skills -->
+            <div class="md:col-span-4 space-y-section-gap">
+                <!-- Professional Profile -->
+                <section>
+                    <h2 class="font-label-caps text-label-caps text-primary mb-stack-gap">Professional Profile</h2>
+                    <p class="font-body-md text-body-md text-charcoal-muted text-justify">
+                        Quantitative risk management specialist with over five years of experience across market risk,
+                        model validation, and risk analytics within banking and insurance. Responsible for contributing
+                        to, challenging, and validating quantitative risk frameworks for risk measurement and
+                        management, including VaR and stress testing. Proficient in Python and R for statistical
+                        modelling and automation.
+                    </p>
+                </section>
+                <!-- Skills -->
+                <section>
+                    <h2 class="font-label-caps text-label-caps text-primary mb-stack-gap">Core Competencies</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 bg-surface-gray border border-border-light font-label-mono text-label-mono text-charcoal-muted">Quantitative
+                            Analysis</span>
+                        <span
+                            class="px-3 py-1 bg-surface-gray border border-border-light font-label-mono text-label-mono text-charcoal-muted">Validation
+                            Analysis</span>
+                        <span
+                            class="px-3 py-1 bg-surface-gray border border-border-light font-label-mono text-label-mono text-charcoal-muted">Python
+                            &amp; R</span>
+                        <span
+                            class="px-3 py-1 bg-surface-gray border border-border-light font-label-mono text-label-mono text-charcoal-muted">Statistical
+                            Modelling</span>
+                        <span
+                            class="px-3 py-1 bg-surface-gray border border-border-light font-label-mono text-label-mono text-charcoal-muted">VaR
+                            &amp; Stress Testing</span>
+                        <span
+                            class="px-3 py-1 bg-surface-gray border border-border-light font-label-mono text-label-mono text-charcoal-muted">Model
+                            Risk Governance</span>
+                        <span
+                            class="px-3 py-1 bg-surface-gray border border-border-light font-label-mono text-label-mono text-charcoal-muted">Regulatory
+                            Compliance</span>
+                        <span
+                            class="px-3 py-1 bg-surface-gray border border-border-light font-label-mono text-label-mono text-charcoal-muted">SAS</span>
+                        <span
+                            class="px-3 py-1 bg-surface-gray border border-border-light font-label-mono text-label-mono text-charcoal-muted">Power
+                            BI</span>
+                    </div>
+                </section>
+                <!-- Technical Image / Decoration -->
+                <div class="aspect-[4/5] bg-surface-gray border border-border-light overflow-hidden group">
+                    <img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                        data-alt="A macro photograph of a high-resolution financial terminal screen displaying complex line charts and statistical volatility data. The image is crisp with a sharp, minimalist focus, using a monochrome palette of deep charcoals and bright whites. The lighting is cold and professional, evoking a high-stakes quantitative analysis environment with rigorous attention to detail."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw90kRAdTiLKKXAMPcCblYGnremEGdQO1a856J81SfjNALLA7BGJiaGFbIC7WHMKmxcPgJtTUcgb28_aT8Je9jc8jIfYePMHzj2X3C8rhm9NLoXka8tv16anQGdUgvr_985irIZHnJKcXkYS49xbjsNHaOtnc0tpLClzM2DTXhtVKfe_gPE6ddavOtjTap7OrA8xFgXZPP4cZc4db6-_wCoO07OkvpsNQWMB_kPfpzPaUnsQYG9xAp3Lu5-niVUunyvWnxAF2zgg" />
+                </div>
+            </div>
+            <!-- Right Column: Experience & Education -->
+            <div class="md:col-span-8 space-y-section-gap">
+                <!-- Experience Section -->
+                <section>
+                    <h2 class="font-label-caps text-label-caps text-primary mb-8">Professional Experience</h2>
+                    <div class="space-y-12">
+                        <!-- Phoenix Group -->
+                        <div class="timeline-border pl-8 relative">
+                            <div class="absolute -left-[4.5px] top-0 w-2 h-2 bg-charcoal-dark"></div>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-headline-md text-headline-md">IPV Analyst</h3>
+                                <span class="font-label-mono text-label-mono text-on-secondary-container">Nov 2023 – May
+                                    2024</span>
+                            </div>
+                            <p class="font-label-caps text-label-caps text-refined-gold mb-4">Phoenix Group</p>
+                            <ul class="font-body-md text-body-md text-charcoal-muted space-y-2">
+                                <li class="relative before:content-['—'] before:absolute before:-left-6">Performed
+                                    independent Line 2 review of bond spread inputs used in the valuation of
+                                    fixed-income and illiquid credit portfolios.</li>
+                                <li class="relative before:content-['—'] before:absolute before:-left-6">Assessed the
+                                    reasonableness of observed and model-implied credit spreads and liquidity premia as
+                                    part of the Group IPV process.</li>
+                                <li class="relative before:content-['—'] before:absolute before:-left-6">Challenged
+                                    valuation outputs where spread assumptions were inconsistent with market evidence or
+                                    valuation standards.</li>
+                            </ul>
+                        </div>
+                        <!-- TSB Bank -->
+                        <div class="timeline-border pl-8 relative">
+                            <div class="absolute -left-[4.5px] top-0 w-2 h-2 bg-charcoal-dark"></div>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-headline-md text-headline-md">Model Validation Manager</h3>
+                                <span class="font-label-mono text-label-mono text-on-secondary-container">Dec 2019 – Aug
+                                    2021</span>
+                            </div>
+                            <p class="font-label-caps text-label-caps text-refined-gold mb-4">TSB Bank</p>
+                            <ul class="font-body-md text-body-md text-charcoal-muted space-y-2">
+                                <li class="relative before:content-['—'] before:absolute before:-left-6">Led independent
+                                    validation of market risk and treasury risk models, including interest rate risk and
+                                    hedging models.</li>
+                                <li class="relative before:content-['—'] before:absolute before:-left-6">Reviewed model
+                                    design, assumptions, and calibration approaches to assess fitness for use.</li>
+                                <li class="relative before:content-['—'] before:absolute before:-left-6">Issued
+                                    validation conclusions and identified material model risk issues in line with
+                                    governance standards.</li>
+                            </ul>
+                        </div>
+                        <!-- HSBC -->
+                        <div class="timeline-border pl-8 relative">
+                            <div class="absolute -left-[4.5px] top-0 w-2 h-2 bg-charcoal-dark"></div>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-headline-md text-headline-md">Prudent Valuation Analyst</h3>
+                                <span class="font-label-mono text-label-mono text-on-secondary-container">May 2018 – Sep
+                                    2018</span>
+                            </div>
+                            <p class="font-label-caps text-label-caps text-refined-gold mb-4">HSBC</p>
+                            <ul class="font-body-md text-body-md text-charcoal-muted space-y-2">
+                                <li class="relative before:content-['—'] before:absolute before:-left-6">Reviewed and
+                                    challenged prudent valuation and fair value adjustment outputs for trading book
+                                    positions.</li>
+                                <li class="relative before:content-['—'] before:absolute before:-left-6">Validated key
+                                    valuation and risk parameters through independent review against PRA and CRR
+                                    requirements.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Expansion toggle or additional link -->
+                    <div class="mt-8">
+                        <a href="CV_Wong_M_EN.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="font-label-caps text-label-caps flex items-center gap-2 group hover:text-refined-gold transition-colors">
+                            Download Full CV (PDF)
+                            <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">download</span>
+                        </a>
+                    </div>
+                </section>
+                <!-- Education Section -->
+                <section>
+                    <h2 class="font-label-caps text-label-caps text-primary mb-8">Academic Foundation</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div
+                            class="p-6 bg-surface-gray border border-border-light hover:border-charcoal-dark transition-colors duration-300">
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="font-label-mono text-label-mono text-on-secondary-container">2024 –
+                                    Present</span>
+                                <span class="material-symbols-outlined text-primary"
+                                    style="font-variation-settings: 'FILL' 1;">school</span>
+                            </div>
+                            <h4 class="font-headline-md text-headline-md text-base mb-1">MSc Actuarial and Financial
+                                Engineering</h4>
+                            <p class="font-label-caps text-label-caps text-refined-gold mb-3">KU Leuven</p>
+                            <p class="font-body-sm text-body-sm text-charcoal-muted">Focus on regulatory capital
+                                modelling and quantitative methods under Solvency II.</p>
+                        </div>
+                        <div
+                            class="p-6 bg-surface-gray border border-border-light hover:border-charcoal-dark transition-colors duration-300">
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="font-label-mono text-label-mono text-on-secondary-container">2011 –
+                                    2013</span>
+                                <span class="material-symbols-outlined text-primary"
+                                    style="font-variation-settings: 'FILL' 1;">analytics</span>
+                            </div>
+                            <h4 class="font-headline-md text-headline-md text-base mb-1">MSc Econometrics</h4>
+                            <p class="font-label-caps text-label-caps text-refined-gold mb-3">Erasmus University
+                                Rotterdam</p>
+                            <p class="font-body-sm text-body-sm text-charcoal-muted">Advanced training in statistical
+                                inference, Bayesian methods, and time series.</p>
+                        </div>
+                        <div
+                            class="p-6 bg-surface-gray border border-border-light hover:border-charcoal-dark transition-colors duration-300">
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="font-label-mono text-label-mono text-on-secondary-container">2005 –
+                                    2010</span>
+                                <span class="material-symbols-outlined text-primary"
+                                    style="font-variation-settings: 'FILL' 1;">biotech</span>
+                            </div>
+                            <h4 class="font-headline-md text-headline-md text-base mb-1">BSc Applied Physics</h4>
+                            <p class="font-label-caps text-label-caps text-refined-gold mb-3">TU Delft</p>
+                            <p class="font-body-sm text-body-sm text-charcoal-muted">Strong quantitative and
+                                first-principles scientific training in mathematics.</p>
+                        </div>
+                        <div
+                            class="p-6 bg-surface-gray border border-border-light hover:border-charcoal-dark transition-colors duration-300">
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="font-label-mono text-label-mono text-on-secondary-container">2006 –
+                                    2011</span>
+                                <span class="material-symbols-outlined text-primary"
+                                    style="font-variation-settings: 'FILL' 1;">language</span>
+                            </div>
+                            <h4 class="font-headline-md text-headline-md text-base mb-1">BA Chinastudies</h4>
+                            <p class="font-label-caps text-label-caps text-refined-gold mb-3">Leiden University</p>
+                            <p class="font-body-sm text-body-sm text-charcoal-muted">Interdisciplinary study of China's
+                                economic and political systems.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface border-t border-border-light w-full py-element-gap">
+        <div class="max-w-container-max mx-auto px-margin-page flex flex-col md:flex-row justify-between items-center gap-stack-gap">
+            <p class="font-body-sm text-body-sm text-on-secondary-container">© 2026 Stanley Wong. All Rights Reserved.</p>
+            <div class="flex gap-8">
+                <a class="font-label-caps text-label-caps text-on-secondary-container hover:underline transition-all flex items-center gap-1" 
+                href="https://www.linkedin.com/in/stanleywong15/" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                    <span class="material-symbols-outlined text-sm">work</span>
+                    LinkedIn
+                </a>
+                <a class="font-label-caps text-label-caps text-on-secondary-container hover:underline transition-all flex items-center gap-1" 
+                href="https://github.com/stanley-wong-coder/" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                    <span class="material-symbols-outlined text-sm">code</span>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Floating Action Button for Contact (Suppressed on this page as per guidelines for Details/CV focus) -->
+    <script>
+        // Micro-interactions for the timeline items
+        document.querySelectorAll('.timeline-border').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.querySelector('.absolute').classList.add('scale-150');
+                item.querySelector('.absolute').classList.add('bg-refined-gold');
+                item.style.borderColor = '#947A4B';
+            });
+            item.addEventListener('mouseleave', () => {
+                item.querySelector('.absolute').classList.remove('scale-150');
+                item.querySelector('.absolute').classList.remove('bg-refined-gold');
+                item.style.borderColor = '#E0E0E0';
+            });
+        });
+    </script>
+</body>
+
+</html>
